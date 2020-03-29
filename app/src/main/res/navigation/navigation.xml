@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/galleryFragment">
+
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.gallerywithpagingdone.GalleryFragment"
+        android:label="Gallery"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_galleryFragment_to_pagerPhotoFragment"
+            app:destination="@id/pagerPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagerPhotoFragment"
+        android:name="com.example.gallerywithpagingdone.PagerPhotoFragment"
+        android:label="PagerPhoto"
+        tools:layout="@layout/fragment_pager_photo" />
+</navigation>
